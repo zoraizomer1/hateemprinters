@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hateem Printers</title>
+  <style>
+    :root{
+      --yellow:#6f8f3c;
+      --dark:#111827;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --line:#e5e7eb;
+      --muted:#6b7280;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+    }
+    .header{
+      background:var(--yellow);
+      padding:22px 16px;
+      text-align:center;
+      font-weight:900;
+      font-size:28px;
+      color:var(--dark);
+    }
+    .sub{
+      text-align:center;
+      color:var(--muted);
+      margin:10px 0 24px;
+    }
+    .container{
+      width:min(1100px,92%);
+      margin:auto;
+      padding-bottom:40px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+    }
+    .item{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:18px;
+      box-shadow:0 8px 24px rgba(0,0,0,.06);
+    }
+    .item h3{
+      margin:0 0 8px;
+      font-size:18px;
+    }
+    .item p{
+      margin:0 0 12px;
+      color:var(--muted);
+      line-height:1.5;
+      font-size:14px;
+    }
+    .item ul{
+      margin:0;
+      padding-left:18px;
+      line-height:1.7;
+      font-size:14px;
+    }
+    .contact{
+      margin-top:28px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:20px;
+      box-shadow:0 8px 24px rgba(0,0,0,.06);
+    }
+    .contact h2{
+      margin-top:0;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:14px;
+      background:var(--dark);
+      color:#fff;
+      padding:12px 18px;
+      border-radius:10px;
+      font-weight:700;
+      text-decoration:none;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width: 600px){
+      .grid{grid-template-columns:1fr}
+      .header{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="header">HATEEM PRINTERS</div>
+  <p class="sub">Buy printing products and items from one simple page</p>
+
+  <div class="container">
+    <div class="grid">
+      <div class="item">
+        <h3>Business Cards</h3>
+        <p>Premium cards for professional branding.</p>
+        <ul>
+          <li>Matte</li>
+          <li>Glossy</li>
+          <li>Spot UV</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Flyers</h3>
+        <p>Perfect for promotions and offers.</p>
+        <ul>
+          <li>A4 Flyers</li>
+          <li>Half Page</li>
+          <li>Custom Size</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Brochures</h3>
+        <p>Neat folded prints for product details.</p>
+        <ul>
+          <li>Tri-fold</li>
+          <li>Bi-fold</li>
+          <li>Custom Fold</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Letterheads</h3>
+        <p>Official office stationery printing.</p>
+        <ul>
+          <li>Standard</li>
+          <li>Custom Logo</li>
+          <li>Bulk Printing</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Envelopes</h3>
+        <p>Branded envelopes for business use.</p>
+        <ul>
+          <li>Office Envelope</li>
+          <li>Logo Print</li>
+          <li>Custom Size</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Stickers</h3>
+        <p>Labels and stickers for products.</p>
+        <ul>
+          <li>Round</li>
+          <li>Square</li>
+          <li>Roll Labels</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Banners</h3>
+        <p>Large printing for shops and events.</p>
+        <ul>
+          <li>Flex Banner</li>
+          <li>Poster</li>
+          <li>Sign Board</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Custom Orders</h3>
+        <p>Any special print product you need.</p>
+        <ul>
+          <li>Wedding Cards</li>
+          <li>Certificates</li>
+          <li>Special Jobs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p><strong>Hateem Printers</strong><br>Aibak Road & New Anarkali Road, Lahore, Punjab, Pakistan</p>
+      <p>Phone: +92 300 4521767<br>Email: ammad1415@gmail.com</p>
+      <a class="btn" href="https://wa.me/923004521767?text=Hi%20I%20want%20to%20order%20printing%20products">Order on WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>

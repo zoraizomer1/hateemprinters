@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hateem Printers</title>
+  <style>
+    :root{
+      --green:#5f7f35;
+      --green-dark:#446028;
+      --bg:#f6f8f4;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+      --shadow:0 10px 24px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+    a{text-decoration:none;color:inherit}
+    .topbar{
+      background:var(--green-dark);
+      color:#fff;
+      text-align:center;
+      padding:12px 16px;
+      font-weight:700;
+      letter-spacing:.3px;
+    }
+    .container{
+      width:min(1120px,92%);
+      margin:auto;
+    }
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+      padding:20px 0;
+    }
+    .brand{
+      font-size:28px;
+      font-weight:900;
+      color:var(--green-dark);
+      line-height:1.05;
+    }
+    .brand span{
+      display:block;
+      font-size:12px;
+      color:var(--muted);
+      font-weight:600;
+      margin-top:5px;
+    }
+    .menu{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+      font-weight:700;
+      color:#374151;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:22px;
+      align-items:center;
+      background:linear-gradient(135deg,#eef7e6,#f9fcf6);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:34px;
+      box-shadow:var(--shadow);
+      margin-bottom:30px;
+    }
+    .hero h1{
+      margin:0 0 12px;
+      font-size:clamp(34px,5vw,58px);
+      line-height:1.05;
+    }
+    .hero p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.8;
+      font-size:16px;
+    }
+    .cta{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:24px;
+    }
+    .btn{
+      display:inline-block;
+      padding:13px 18px;
+      border-radius:10px;
+      font-weight:700;
+    }
+    .btn.primary{
+      background:var(--green);
+      color:#fff;
+    }
+    .btn.secondary{
+      background:#fff;
+      color:var(--green-dark);
+      border:1px solid var(--line);
+    }
+    .hero-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .hero-card img{
+      width:100%;
+      display:block;
+    }
+    .section{
+      padding:12px 0 42px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:30px;
+    }
+    .lead{
+      margin:0 0 22px;
+      color:var(--muted);
+      line-height:1.7;
+      max-width:75ch;
+    }
+    .services{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .service{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+    .service h3{
+      margin:0 0 8px;
+      font-size:19px;
+    }
+    .service p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+      font-size:14px;
+    }
+    .service ul{
+      margin:12px 0 0;
+      padding-left:18px;
+      color:#374151;
+      line-height:1.7;
+      font-size:14px;
+    }
+    .contact{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:22px;
+      box-shadow:var(--shadow);
+    }
+    .contact p{
+      color:var(--muted);
+      line-height:1.8;
+      margin:0 0 10px;
+    }
+    .whatsapp{
+      display:inline-block;
+      margin-top:8px;
+      background:#16a34a;
+      color:#fff;
+      padding:12px 18px;
+      border-radius:10px;
+      font-weight:700;
+    }
+    footer{
+      text-align:center;
+      color:var(--muted);
+      padding:24px 0 34px;
+    }
+    @media (max-width: 900px){
+      .hero,.services{grid-template-columns:1fr}
+      .nav{justify-content:center;text-align:center}
+      .brand{text-align:center}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Hateem Printers | Printing Services</div>
+
+  <div class="container">
+    <header class="nav">
+      <div class="brand">
+        HATEEM PRINTERS
+        <span>One Page Printing Services</span>
+      </div>
+      <nav class="menu">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Simple Printing Services Website</h1>
+        <p>
+          A clean one-page website for all printing-related services, made easy for customers to understand.
+          You can use this page for business cards, flyers, stationery, packaging, banners, and custom print jobs.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#services">Explore Services</a>
+          <a class="btn secondary" href="#contact">Order Now</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1554232456-8727aae0cfa4?auto=format&fit=crop&w=1200&q=80" alt="Printing services" />
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Our Services</h2>
+      <p class="lead">Only printing-related services are included here so the page stays simple and focused.</p>
+
+      <div class="services">
+        <div class="service">
+          <h3>Offset Printing</h3>
+          <p>Best for large quantity jobs with sharp color quality.</p>
+          <ul>
+            <li>Brochures</li>
+            <li>Flyers</li>
+            <li>Books</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h3>Digital Printing</h3>
+          <p>Fast printing for urgent and small quantity orders.</p>
+          <ul>
+            <li>Business Cards</li>
+            <li>Invitations</li>
+            <li>Certificates</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h3>Stationery Printing</h3>
+          <p>Professional office items with your brand identity.</p>
+          <ul>
+            <li>Letterheads</li>
+            <li>Envelopes</li>
+            <li>Receipt Books</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h3>Packaging Printing</h3>
+          <p>Custom packaging and branded product material.</p>
+          <ul>
+            <li>Boxes</li>
+            <li>Labels</li>
+            <li>Tags</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h3>Large Format Printing</h3>
+          <p>Big prints for shops, ads, and events.</p>
+          <ul>
+            <li>Banners</li>
+            <li>Posters</li>
+            <li>Sign Boards</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h3>Custom Print Work</h3>
+          <p>Special print jobs made to order.</p>
+          <ul>
+            <li>Wedding Cards</li>
+            <li>Menu Cards</li>
+            <li>Special Orders</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <h2>Why Choose Us</h2>
+      <p class="lead">
+        We keep the design simple, fast to read, and easy to edit. This makes it suitable for a printing business website or landing page.
+      </p>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>
+          Phone: +92 300 4521767<br />
+          WhatsApp: quick order link below
+        </p>
+        <a class="whatsapp" href="https://wa.me/923004521767?text=Hi%20I%20need%20printing%20services">Order on WhatsApp</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>© 2026 HATEEM PRINTERS. All Rights Reserved.</footer>
+</body>
+</html>
+</body>
+</html>
